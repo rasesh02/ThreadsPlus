@@ -125,8 +125,8 @@ export const getAllPosts=async(req,res)=>{
       path: "comments.user",
       select: "-password",
     })
-    if(posts.length===0) return res.status(400).json([]);
-    return res.status(400).json(posts);
+    if(posts.length===0) return res.status(200).json([]);
+    res.status(200).json(posts);
   }
   catch(error){
     console.log("Error in getAllpost controller: ", error);

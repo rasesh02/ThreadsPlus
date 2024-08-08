@@ -7,7 +7,7 @@ router.post("/createPost",protectRoute,createPost);
 router.post("/delete/:id",protectRoute,deletePost);
 router.post("/comment/:id",protectRoute,commentOnPost);
 router.post("/likeUnlike/:id",protectRoute,likeUnlikePost);
-router.get("/allPosts",protectRoute,getAllPosts);
+router.get("/all",protectRoute,getAllPosts);
 router.get("/likedPosts/:id",protectRoute,getLikedPosts);
 router.get("/following",protectRoute,getFollowingPosts);
 router.get("/myPosts/:username",protectRoute,getUserPosts);

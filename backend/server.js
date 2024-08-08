@@ -25,10 +25,10 @@ import userRoutes from "./routes/user.route.js"
 import postRoutes from './routes/post.route.js'
 import notificationRoutes from './routes/notification.route.js'
 
-app.use("/api/v1/auth",authRoutes);
-app.use("/api/v1/users",userRoutes);
-app.use("/api/v1/posts",postRoutes);
-app.use("/api/v1/notification",notificationRoutes);
+app.use("/api/auth",authRoutes);
+app.use("/api/users",userRoutes);
+app.use("/api/posts",postRoutes);
+app.use("/api/notification",notificationRoutes);
 
 app.listen(port,()=>{
     console.log(`listening at port ${port}`);

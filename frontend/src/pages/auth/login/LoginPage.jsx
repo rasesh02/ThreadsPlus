@@ -2,11 +2,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import XSvg from "../../../components/svgs/X";
-
 import { MdOutlineMail } from "react-icons/md";
 import { MdPassword } from "react-icons/md";
 import {  useMutation, useQueryClient } from "@tanstack/react-query";
-import toast from "react-hot-toast";
+//import toast from "react-hot-toast";
 
 const LoginPage = () => {
 	const [formData, setFormData] = useState({
@@ -26,7 +25,6 @@ const LoginPage = () => {
 					body: JSON.stringify({username, password }),
 			})
 			const data = await res.json();
-			if(data.error) return null;
 			if (!res.ok) throw new Error(data.error || "Failed to login");
 			console.log(data);
 			return data;
@@ -60,7 +58,7 @@ const LoginPage = () => {
 			<div className='flex-1 flex flex-col justify-center items-center'>
 				<form className='flex gap-4 flex-col' onSubmit={handleSubmit}>
 					<XSvg className='w-24 lg:hidden fill-white' />
-					<h1 className='text-4xl font-extrabold text-white'>{"Let's"} go.</h1>
+					<h1 className='text-4xl font-extrabold text-white'> R-Threads Login</h1>
 					<label className='input input-bordered rounded flex items-center gap-2'>
 						<MdOutlineMail />
 						<input

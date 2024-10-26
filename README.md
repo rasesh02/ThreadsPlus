@@ -5,8 +5,8 @@ In addition to these core features, R-Threads provides cool functionalities like
 Website Link: https://threadsplus.onrender.com/login
 
 Login Credentials: 
-Username: daemonC
-Password: 00000D
+Username: watashi
+Password: onerawatsa1
 
 <img width="1242" alt="Screenshot 2024-08-24 at 1 51 57 PM" src="https://github.com/user-attachments/assets/7debff73-4c5c-4cb1-9057-a716597d15b2">
 <img width="1331" alt="Screenshot 2024-08-24 at 1 52 09 PM" src="https://github.com/user-attachments/assets/33cf5608-e5fe-449f-bee0-6b28dd7eb480">
